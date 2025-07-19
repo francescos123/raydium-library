@@ -12,7 +12,12 @@ anchor-lang = "=0.29.0"
 serum_dex = { version = "0.5.10", git = "git@github.com:francescos123/openbook-dex.git", branch = "solana-2.2-upgrade", default-features = false, features = ["client","no-entrypoint"] }
 
 
-raydium_amm = { git = "https://github.com/francescos123/raydium-amm.git", branch = "solana-2.2-upgrade", default-features = false, features = ["client","no-entrypoint"] }
+[dependencies.serum_dex]
+version          = "0.5.10"
+git              = "git@github.com:francescos123/openbook-dex.git"
+branch           = "solana-2.2-upgrade"
+default-features = false
+features         = ["client", "no-entrypoint"]
 
 common = { path = "../common" }
 spl-token = { version = "=4.0.0", features = ["no-entrypoint"] }

@@ -7,4 +7,4 @@ members = [
     "libraries/common",
     "client",
 ]
-exclude = ["libraries"]
+
